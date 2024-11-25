@@ -14,3 +14,4 @@ function greetings() {
     console.log('Hi!');
   }
 }
+

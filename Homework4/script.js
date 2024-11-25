@@ -15,9 +15,7 @@ function checkBMIInterpretation() {
     console.log('средно недохранване');
   } else if (bodyMassIndex >= 17 && bodyMassIndex < 18.49) {
     console.log('леко недохранване');
-  }
-
-  if (bodyMassIndex < 18.5) {
+  } else if (bodyMassIndex < 18.5) {
     console.log('поднормено тегло ');
   } else if (bodyMassIndex >= 18.5 && bodyMassIndex < 24.99) {
     console.log('нормално тегло ');
