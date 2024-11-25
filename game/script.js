@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
   let level = document.getElementById('level').value;
-  console.log(level);
 
   if (level == 'easy') {
     let machineNumber = Math.floor(Math.random() * 10) + 1;
