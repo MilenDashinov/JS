@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function startGame() {
     let level = document.getElementById('level').value;
     console.log(level);
+    let numbers = [];
 
     if (level == 'easy') {
       let machineNumber = Math.floor(Math.random() * 10) + 1;
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         gameCount++;
+        numbers.push(userGuess);
         if (userGuess > machineNumber) {
           alert(`${userGuess} is too high!`);
         } else if (userGuess < machineNumber) {
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (userGuess === machineNumber) {
           alert(`Congratulations! You guessed my number!`);
           alert(`you guessed on ${gameCount} try`);
+          alert(`the numbers entered are  ${numbers.join(' - ')}`);
         }
 
         if (gameCount === 10) {
@@ -45,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         gameCount++;
+        numbers.push(userGuess);
         if (userGuess > machineNumber) {
           alert(`${userGuess} is too high!`);
         } else if (userGuess < machineNumber) {
@@ -52,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (userGuess === machineNumber) {
           alert(`Congratulations! You guessed my number!`);
           alert(`you guessed on ${gameCount} try`);
+          alert(`the numbers entered are  ${numbers.join(' - ')}`);
         }
 
         if (gameCount === 10) {
@@ -73,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         gameCount++;
+        numbers.push(userGuess);
         if (userGuess > machineNumber) {
           alert(`${userGuess} is too high!`);
         } else if (userGuess < machineNumber) {
@@ -80,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (userGuess === machineNumber) {
           alert(`Congratulations! You guessed my number!`);
           alert(`you guessed on ${gameCount} try`);
+          alert(`the numbers entered are  ${numbers.join(' - ')}`);
         }
 
         if (gameCount === 10) {
